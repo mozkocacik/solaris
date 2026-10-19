@@ -1,0 +1,34 @@
+<!-- @dsCard group="Inputs" height=260 subtitle="Comment box with mention, attach and send" -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>CommentComposer</title></head>
+<body>
+<div id="root">
+<div class="sl-demo" style="max-width: 320px">
+  <div class="sl-field">
+    <label for="cc1" class="sl-h"><i data-icon="message-circle"></i>Comment</label>
+    <div class="sl-composer">
+      <textarea id="cc1" rows="3" placeholder="Write a comment…"></textarea>
+      <div class="sl-composer__bar">
+        <button type="button" class="sl-iconbtn sl-iconbtn--xs sl-iconbtn--muted" aria-label="Mention someone"><i data-icon="at-sign" class="sl-icon--sm"></i></button>
+        <button type="button" class="sl-iconbtn sl-iconbtn--xs sl-iconbtn--muted" aria-label="Attach file"><i data-icon="paperclip" class="sl-icon--sm"></i></button>
+        <span class="sl-spacer"></span>
+        <button type="button" class="sl-sendbtn" aria-label="Send comment" disabled><i data-icon="send" class="sl-icon--sm"></i></button>
+      </div>
+    </div>
+  </div>
+  <div class="sl-composer">
+    <label for="cc2" class="sl-sr">Reply</label>
+    <textarea id="cc2" rows="2">Looks good. @Hana Sato can you check row 14?</textarea>
+    <div class="sl-composer__bar">
+      <button type="button" class="sl-iconbtn sl-iconbtn--xs sl-iconbtn--muted" aria-label="Mention someone"><i data-icon="at-sign" class="sl-icon--sm"></i></button>
+      <button type="button" class="sl-iconbtn sl-iconbtn--xs sl-iconbtn--muted" aria-label="Attach file"><i data-icon="paperclip" class="sl-icon--sm"></i></button>
+      <span class="sl-spacer"></span>
+      <button type="button" class="sl-sendbtn" aria-label="Send comment"><i data-icon="send" class="sl-icon--sm"></i></button>
+    </div>
+  </div>
+</div>
+</div>
+<script>Solaris.preview({"title": "CommentComposer"});</script>
+</body>
+</html>

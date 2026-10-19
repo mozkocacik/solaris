@@ -1,0 +1,31 @@
+<!-- @dsCard group="Actions" height=220 subtitle="Sort control with field and direction" -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>SortButton</title></head>
+<body>
+<div id="root">
+<div class="sl-demo">
+  <div class="sl-demo__row"><span class="sl-demo__cap">Default</span>
+    <span class="sl-pop">
+      <button type="button" class="sl-chip" data-sl-menu="sort-menu" aria-expanded="false" aria-haspopup="menu"><i data-icon="arrow-up-down" class="sl-icon--sm"></i>Modified <span class="sl-chip__dir" aria-label="newest first">↓</span></button>
+      <div class="sl-menu" id="sort-menu" role="menu" hidden>
+        <div class="sl-menu__label">Sort by</div>
+        <button type="button" class="sl-menu__item" role="menuitemradio" aria-checked="false"><i data-icon="file-text"></i>Name</button>
+        <button type="button" class="sl-menu__item" role="menuitemradio" aria-checked="true"><i data-icon="clock"></i>Modified</button>
+        <button type="button" class="sl-menu__item" role="menuitemradio" aria-checked="false"><i data-icon="user"></i>Owner</button>
+        <div class="sl-menu__sep" role="separator"></div>
+        <button type="button" class="sl-menu__item" role="menuitemradio" aria-checked="false"><i data-icon="arrow-up"></i>Oldest first</button>
+        <button type="button" class="sl-menu__item" role="menuitemradio" aria-checked="true"><i data-icon="arrow-down"></i>Newest first</button>
+      </div>
+    </span>
+    <button type="button" class="sl-chip"><i data-icon="arrow-up-down" class="sl-icon--sm"></i>Name <span class="sl-chip__dir" aria-label="A to Z">↑</span></button>
+  </div>
+  <div class="sl-demo__row"><span class="sl-demo__cap">Hover · Focus</span>
+    <button type="button" class="sl-chip sl-force-hover"><i data-icon="arrow-up-down" class="sl-icon--sm"></i>Size <span class="sl-chip__dir">↓</span></button>
+    <button type="button" class="sl-chip sl-force-focus"><i data-icon="arrow-up-down" class="sl-icon--sm"></i>Due <span class="sl-chip__dir">↑</span></button>
+  </div>
+</div>
+</div>
+<script>Solaris.preview({"title": "SortButton"});</script>
+</body>
+</html>

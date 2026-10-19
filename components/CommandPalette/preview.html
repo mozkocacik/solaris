@@ -1,0 +1,22 @@
+<!-- @dsCard group="Overlays" height=420 subtitle="Keyboard-first search and actions" -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>CommandPalette</title></head>
+<body>
+<div id="root">
+<div class="sl-palette" role="dialog" aria-modal="true" aria-label="Command palette" style="animation:none">
+  <div class="sl-palette__input"><i data-icon="search" class="sl-icon--lg"></i><label for="cp1" class="sl-sr">Search or run a command</label><input id="cp1" type="text" value="rep" role="combobox" aria-expanded="true" aria-controls="cp1-list" aria-activedescendant="cp1-a"><span class="sl-kbd">Esc</span></div>
+  <div class="sl-palette__list" id="cp1-list" role="listbox" aria-label="Results">
+    <div class="sl-menu__label">Items</div>
+    <div class="sl-option" role="option" id="cp1-a" data-active="true" aria-selected="true"><span class="sl-typebadge sl-typebadge--red">RP</span><span class="sl-stack2"><span>Monthly summary — September</span><span>Partners · Edited Oct 9</span></span><span class="sl-kbd">↵</span></div>
+    <div class="sl-option" role="option" aria-selected="false"><span class="sl-typebadge sl-typebadge--blue">PG</span><span class="sl-stack2"><span>Incident report template</span><span>Templates · Edited Sep 28</span></span></div>
+    <div class="sl-menu__label">Actions</div>
+    <div class="sl-option" role="option" aria-selected="false"><i data-icon="plus"></i><span>New report</span><span class="sl-kbd" style="margin-left:auto">N R</span></div>
+    <div class="sl-option" role="option" aria-selected="false"><i data-icon="sunset"></i><span>Switch to Night light theme</span></div>
+  </div>
+  <div class="sl-palette__foot"><span><span class="sl-kbd">↑</span><span class="sl-kbd">↓</span>Move</span><span><span class="sl-kbd">↵</span>Open</span><span><span class="sl-kbd">Esc</span>Close</span></div>
+</div>
+</div>
+<script>Solaris.preview({"bg": true, "title": "CommandPalette"});</script>
+</body>
+</html>

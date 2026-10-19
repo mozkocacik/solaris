@@ -1,0 +1,38 @@
+<!-- @dsCard group="Foundations" height=760 subtitle="Playable demos of every motion token" page -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Motion</title></head>
+<body>
+<div id="root">
+<style>
+.fd-m { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; }
+.fd-m__card { display: flex; flex-direction: column; gap: 10px; padding: 12px; border: 1px solid var(--border); border-radius: var(--r-lg); background: var(--surface); }
+.fd-m__stage { position: relative; height: 96px; border-radius: var(--r-md); background: var(--bg); overflow: hidden; display:flex; align-items:center; justify-content:center; }
+.fd-m__head { display: flex; align-items: center; gap: 8px; }
+.fd-m__head b { flex: 1; font-weight: 600; }
+.fd-panel { position: absolute; right: 0; top: 0; bottom: 0; width: 46%; background: var(--surface); border-left: 1px solid var(--border); }
+.fd-row { width: 80%; display: flex; align-items: center; gap: 8px; height: 30px; padding: 0 8px; border-radius: var(--r-sm); background: var(--surface); }
+.fd-row:hover { background: var(--hover); }
+</style>
+<div class="fd-m">
+  <div class="fd-m__card"><div class="fd-m__head"><b>Press</b><span class="sl-mono sl-count">dur-fast · 100ms</span></div><div class="fd-m__stage"><button type="button" class="sl-btn sl-btn--primary">Press me</button></div><span class="sl-count">Buttons move 1px down while pressed; hover colours use the same duration.</span></div>
+  <div class="fd-m__card"><div class="fd-m__head"><b>Hover reveal</b><span class="sl-mono sl-count">dur-base · 150ms</span></div><div class="fd-m__stage"><table style="width:80%; border-collapse: collapse"><tbody><tr style="background: var(--surface)"><td style="padding: 6px 8px">Hover this row</td><td style="width: 60px"><span class="sl-rowactions"><button type="button" class="sl-iconbtn sl-iconbtn--sm sl-iconbtn--muted" aria-label="Star"><i data-icon="star"></i></button></span></td></tr></tbody></table></div><span class="sl-count">Row actions fade and slide 4px in on hover and focus.</span></div>
+  <div class="fd-m__card"><div class="fd-m__head"><b>Side panel</b><span class="sl-mono sl-count">dur-enter · 200ms</span><button type="button" class="sl-btn sl-btn--sm" data-play="slide"><i data-icon="rotate-ccw" class="sl-icon--sm"></i>Play</button></div><div class="fd-m__stage"><div class="fd-panel sl-anim-slide" data-target="slide"></div></div><span class="sl-count">Slides 14px from the right with ease-enter.</span></div>
+  <div class="fd-m__card"><div class="fd-m__head"><b>Screen</b><span class="sl-mono sl-count">dur-enter · 200ms</span><button type="button" class="sl-btn sl-btn--sm" data-play="screen"><i data-icon="rotate-ccw" class="sl-icon--sm"></i>Play</button></div><div class="fd-m__stage"><div class="sl-anim-screen sl-col" data-target="screen" style="width:80%; gap:6px"><span class="sl-mini__h" style="height:8px; width:50%"></span><span class="sl-mini__l" style="height:6px; width:90%"></span><span class="sl-mini__l" style="height:6px; width:70%"></span></div></div><span class="sl-count">New screens fade in and rise 6px.</span></div>
+  <div class="fd-m__card"><div class="fd-m__head"><b>Bulk bar and toast</b><span class="sl-mono sl-count">dur-enter · 200ms</span><button type="button" class="sl-btn sl-btn--sm" data-play="rise"><i data-icon="rotate-ccw" class="sl-icon--sm"></i>Play</button></div><div class="fd-m__stage" style="align-items:flex-end; padding-bottom: 12px"><div class="sl-bulkbar" data-target="rise"><span class="sl-bulkbar__count">2 selected</span><button type="button" class="sl-bulkbar__btn">Move</button></div></div><span class="sl-count">Rises 10px with a .98 scale.</span></div>
+  <div class="fd-m__card"><div class="fd-m__head"><b>Dialog</b><span class="sl-mono sl-count">dur-base + dur-enter</span><button type="button" class="sl-btn sl-btn--sm" data-play="dialog"><i data-icon="rotate-ccw" class="sl-icon--sm"></i>Play</button></div><div class="fd-m__stage"><div class="sl-backdrop" data-target="dialog" style="padding: 14px"><div class="sl-dialog" style="width: 70%; height: 56px"></div></div></div><span class="sl-count">Backdrop fades; the dialog rises and scales in.</span></div>
+  <div class="fd-m__card"><div class="fd-m__head"><b>Theme change</b><span class="sl-mono sl-count">dur-theme · 250ms</span><button type="button" class="sl-btn sl-btn--sm" data-play="theme"><i data-icon="sunset" class="sl-icon--sm"></i>Cycle</button></div><div class="fd-m__stage" data-target="theme" data-theme="light" style="background: var(--bg)"><div class="fd-row"><span class="sl-typebadge sl-typebadge--blue">PG</span><span style="color: var(--text)">Release plan</span></div></div><span class="sl-count">Only colours animate, and only while the theme switches.</span></div>
+  <div class="fd-m__card"><div class="fd-m__head"><b>Live pulse</b><span class="sl-mono sl-count">dur-pulse · 1600ms</span></div><div class="fd-m__stage"><span class="sl-live"><span class="sl-live__dot"></span>Hana is editing</span></div><span class="sl-count">The only loop in the system. Static with reduced motion.</span></div>
+</div>
+</div>
+<script>Solaris.preview({"mode": "single", "title": "Motion", "after": function(r){
+  r.addEventListener("click", function(e){
+    var b = e.target.closest("[data-play]"); if (!b) return;
+    var k = b.getAttribute("data-play"); var st = b.closest(".sl-stage"); var t = st.querySelector('[data-target="' + k + '"]');
+    if (k === "theme") { var ids = ["light", "night", "dark"]; var cur = t.getAttribute("data-theme"); Solaris.setTheme(t, ids[(ids.indexOf(cur) + 1) % 3]); return; }
+    var kids = k === "dialog" ? [t, t.firstElementChild] : [t];
+    kids.forEach(function(x){ x.style.animation = "none"; void x.offsetWidth; x.style.animation = ""; });
+  });
+}});</script>
+</body>
+</html>

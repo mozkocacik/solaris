@@ -1,0 +1,41 @@
+<!-- @dsCard group="Actions" height=420 subtitle="Primary, secondary, ghost and danger buttons in three sizes" -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Button</title></head>
+<body>
+<div id="root">
+<div class="sl-demo">
+  <div class="sl-demo__row"><span class="sl-demo__cap">Variants</span>
+    <button type="button" class="sl-btn sl-btn--primary"><i data-icon="plus"></i>New</button>
+    <button type="button" class="sl-btn"><i data-icon="upload"></i>Import</button>
+    <button type="button" class="sl-btn sl-btn--ghost"><i data-icon="download"></i>Export</button>
+    <button type="button" class="sl-btn sl-btn--danger"><i data-icon="trash-2"></i>Delete</button>
+  </div>
+  <div class="sl-demo__row"><span class="sl-demo__cap">Sizes</span>
+    <button type="button" class="sl-btn sl-btn--sm">Small</button>
+    <button type="button" class="sl-btn">Medium</button>
+    <button type="button" class="sl-btn sl-btn--lg">Large</button>
+    <button type="button" class="sl-btn sl-btn--icon" aria-label="Share"><i data-icon="share"></i></button>
+  </div>
+  <div class="sl-demo__row"><span class="sl-demo__cap">Hover</span>
+    <button type="button" class="sl-btn sl-btn--primary sl-force-hover">Open</button>
+    <button type="button" class="sl-btn sl-force-hover">Share</button>
+  </div>
+  <div class="sl-demo__row"><span class="sl-demo__cap">Focus</span>
+    <button type="button" class="sl-btn sl-btn--primary sl-force-focus">Open</button>
+    <button type="button" class="sl-btn sl-force-focus">Share</button>
+  </div>
+  <div class="sl-demo__row"><span class="sl-demo__cap">Loading</span>
+    <button type="button" class="sl-btn sl-btn--primary" aria-busy="true"><i data-icon="upload"></i>Importing</button>
+    <button type="button" class="sl-btn" aria-busy="true">Saving</button>
+  </div>
+  <div class="sl-demo__row"><span class="sl-demo__cap">Disabled</span>
+    <button type="button" class="sl-btn sl-btn--primary" disabled>Done</button>
+    <button type="button" class="sl-btn" disabled>Move</button>
+    <button type="button" class="sl-btn sl-btn--ghost" disabled>Export</button>
+  </div>
+</div>
+</div>
+<script>Solaris.preview({"title": "Button"});</script>
+</body>
+</html>

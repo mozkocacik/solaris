@@ -1,0 +1,15 @@
+<!-- @dsCard group="Data display" height=220 subtitle="Key figure with label and change" -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>StatTile</title></head>
+<body>
+<div id="root">
+<div style="display:grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px">
+  <div class="sl-stat"><span class="sl-stat__label"><i data-icon="boxes" class="sl-icon--sm"></i>Active items</span><span class="sl-stat__value">1,204</span><span class="sl-stat__delta sl-stat__delta--up"><i data-icon="arrow-up" class="sl-icon--sm"></i>8.2% vs last week</span></div>
+  <div class="sl-stat"><span class="sl-stat__label"><i data-icon="clock" class="sl-icon--sm"></i>Waiting review</span><span class="sl-stat__value">37</span><span class="sl-stat__delta sl-stat__delta--down"><i data-icon="arrow-up" class="sl-icon--sm"></i>12 more than Monday</span></div>
+  <div class="sl-stat"><span class="sl-stat__label"><i data-icon="users" class="sl-icon--sm"></i>Members</span><span class="sl-stat__value">86</span><span class="sl-stat__delta">No change</span></div>
+</div>
+</div>
+<script>Solaris.preview({"title": "StatTile"});</script>
+</body>
+</html>

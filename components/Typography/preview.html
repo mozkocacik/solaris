@@ -1,0 +1,33 @@
+<!-- @dsCard group="Foundations" height=900 subtitle="Geist and Geist Mono, a small tight scale on a 13px base" page -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Typography</title></head>
+<body>
+<div id="root">
+<style>
+.fd-ty { display: grid; grid-template-columns: minmax(0, 260px) minmax(0, 1fr); gap: 16px; align-items: baseline; padding: 12px 0; border-bottom: 1px solid var(--divider); }
+.fd-ty__meta { display: flex; flex-direction: column; gap: 2px; }
+@media (max-width: 640px) { .fd-ty { grid-template-columns: 1fr; gap: 4px; } }
+</style>
+<div class="sl-col" style="gap: 18px">
+  <div class="sl-row" style="gap: 32px; align-items: flex-end">
+    <div class="sl-col" style="gap: 2px"><span style="font-size: 56px; line-height: 1; font-weight: 600; letter-spacing: -0.02em">Aa</span><span class="sl-count">Geist · 400 500 600</span></div>
+    <div class="sl-col" style="gap: 2px"><span class="sl-mono" style="font-size: 56px; line-height: 1; font-weight: 500">Aa</span><span class="sl-count">Geist Mono · 400 500</span></div>
+    <div class="sl-col" style="gap: 6px; flex: 1 1 260px; color: var(--text-3)">
+      <span><span style="font-weight:400">Regular 400</span> · <span style="font-weight:500">Medium 500</span> · <span style="font-weight:600">Semibold 600</span></span>
+      <span>Tabular figures: <span style="font-variant-numeric: tabular-nums">1,204 · 0,118 · 98,765</span></span>
+    </div>
+  </div>
+  <section><div class="fd-ty"><div class="fd-ty__meta"><span class="sl-mono" style="font-size: var(--fs-sm); color: var(--text)">text-xl</span><span class="sl-count">18px / 24px · 600 · -0.01em</span><span class="sl-count">Page titles and greetings. One per screen.</span></div><div class="text-xl" style="color: var(--text); min-width:0; overflow-wrap:anywhere">Good morning, Rana</div></div><div class="fd-ty"><div class="fd-ty__meta"><span class="sl-mono" style="font-size: var(--fs-sm); color: var(--text)">text-lg</span><span class="sl-count">14px / 20px · 600</span><span class="sl-count">Panel titles, dialog titles, object-view title.</span></div><div class="text-lg" style="color: var(--text); min-width:0; overflow-wrap:anywhere">Share this collection</div></div><div class="fd-ty"><div class="fd-ty__meta"><span class="sl-mono" style="font-size: var(--fs-sm); color: var(--text)">text-md-strong</span><span class="sl-count">13px / 19px · 600</span><span class="sl-count">Section headings in panels, active nav item.</span></div><div class="text-md-strong" style="color: var(--text); min-width:0; overflow-wrap:anywhere">Quarterly intake form</div></div><div class="fd-ty"><div class="fd-ty__meta"><span class="sl-mono" style="font-size: var(--fs-sm); color: var(--text)">text-md-medium</span><span class="sl-count">13px / 19px · 500</span><span class="sl-count">Names in rows, cards and lists; button labels.</span></div><div class="text-md-medium" style="color: var(--text); min-width:0; overflow-wrap:anywhere">Field inventory 2026</div></div><div class="fd-ty"><div class="fd-ty__meta"><span class="sl-mono" style="font-size: var(--fs-sm); color: var(--text)">text-md</span><span class="sl-count">13px / 19px · 400</span><span class="sl-count">Base: body, nav, controls, table cells.</span></div><div class="text-md" style="color: var(--text); min-width:0; overflow-wrap:anywhere">Owner changed the status to In review.</div></div><div class="fd-ty"><div class="fd-ty__meta"><span class="sl-mono" style="font-size: var(--fs-sm); color: var(--text)">text-sm</span><span class="sl-count">12px / 17px · 400</span><span class="sl-count">Meta lines, table header (500), small buttons.</span></div><div class="text-sm" style="color: var(--text); min-width:0; overflow-wrap:anywhere">Edited 2 h ago by Jonas Weber</div></div><div class="fd-ty"><div class="fd-ty__meta"><span class="sl-mono" style="font-size: var(--fs-sm); color: var(--text)">text-xs</span><span class="sl-count">11px / 16px · 400</span><span class="sl-count">Counts, chips, pills, timestamps.</span></div><div class="text-xs" style="color: var(--text); min-width:0; overflow-wrap:anywhere">1,204 items · Today, 08:40</div></div><div class="fd-ty"><div class="fd-ty__meta"><span class="sl-mono" style="font-size: var(--fs-sm); color: var(--text)">label-caps</span><span class="sl-count">11px / 16px · 500 · 0.04em</span><span class="sl-count">Sidebar group labels only. Write the text in capitals.</span></div><div class="label-caps" style="color: var(--text); min-width:0; overflow-wrap:anywhere">WORKSPACE</div></div><div class="fd-ty"><div class="fd-ty__meta"><span class="sl-mono" style="font-size: var(--fs-sm); color: var(--text)">mono-sm</span><span class="sl-count">12px / 16px · 400</span><span class="sl-count">IDs, version tags, code.</span></div><div class="mono-sm" style="color: var(--text); min-width:0; overflow-wrap:anywhere">REC-20418 · v3.2.0</div></div><div class="fd-ty"><div class="fd-ty__meta"><span class="sl-mono" style="font-size: var(--fs-sm); color: var(--text)">mono-xs</span><span class="sl-count">10px / 14px · 500</span><span class="sl-count">Type codes inside type badges, keyboard hints.</span></div><div class="mono-xs" style="color: var(--text); min-width:0; overflow-wrap:anywhere">TB  FM  DG  ⌘K</div></div></section>
+  <section class="sl-col"><h3 class="sl-h sl-h--sub">In context</h3>
+    <div class="sl-box" style="padding: 12px; display:flex; flex-direction:column; gap: 6px">
+      <span class="text-xl">Asset register</span>
+      <span class="text-sm" style="color: var(--text-4)">418 items · Edited Today, 08:40 by Jonas Weber</span>
+      <div class="sl-row" style="gap:6px"><span class="sl-typebadge sl-typebadge--green">TB</span><span class="text-md-medium sl-trunc" style="max-width: 220px" title="Asset register — North and South sites, combined">Asset register — North and South sites, combined</span><span class="mono-sm" style="color: var(--text-3)">REC-20418</span></div>
+    </div>
+  </section>
+</div>
+</div>
+<script>Solaris.preview({"mode": "single", "title": "Typography"});</script>
+</body>
+</html>

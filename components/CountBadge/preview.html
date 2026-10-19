@@ -1,0 +1,26 @@
+<!-- @dsCard group="Data display" height=180 subtitle="Plain counts and count badges" -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>CountBadge</title></head>
+<body>
+<div id="root">
+<div class="sl-demo">
+  <div class="sl-demo__row"><span class="sl-demo__cap">Count</span>
+    <span class="sl-row" style="gap:6px">Members <span class="sl-count">1,204</span></span>
+    <span class="sl-row" style="gap:6px">Open <span class="sl-count">0</span></span>
+  </div>
+  <div class="sl-demo__row"><span class="sl-demo__cap">Badge</span>
+    <span class="sl-countbadge" aria-label="3 unread">3</span>
+    <span class="sl-countbadge" aria-label="12 unread">12</span>
+    <span class="sl-countbadge" aria-label="More than 99 unread">99+</span>
+    <span class="sl-countbadge sl-countbadge--neutral">8</span>
+  </div>
+  <ul class="sl-nav" style="max-width: 230px">
+    <li><button type="button" class="sl-navitem"><i data-icon="inbox" class="sl-icon--nav"></i><span class="sl-navitem__label">Inbox</span><span class="sl-countbadge" aria-label="4 unread">4</span></button></li>
+    <li><button type="button" class="sl-navitem"><i data-icon="square-check-big" class="sl-icon--nav"></i><span class="sl-navitem__label">My tasks</span><span class="sl-count">7</span></button></li>
+  </ul>
+</div>
+</div>
+<script>Solaris.preview({"title": "CountBadge"});</script>
+</body>
+</html>

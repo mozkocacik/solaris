@@ -1,0 +1,48 @@
+<!-- @dsCard group="Patterns" height=640 subtitle="Sharp shell: sidebar, top bar and content split by 1px lines" width=1200 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>App shell</title></head>
+<body>
+<div id="root">
+<div class="sl-app" style="min-height: 600px">
+<nav class="sl-sidebar" aria-label="Main">
+  <div class="sl-switcher">
+    <button type="button" class="sl-switcher__btn" aria-label="Switch workspace, current Harbor Ops"><span class="sl-brand">H</span><span class="sl-trunc" style="flex:1; font-weight:600">Harbor Ops</span><i data-icon="chevron-down" class="sl-icon--sm sl-icon--muted"></i></button>
+    <span class="sl-tip"><button type="button" class="sl-iconbtn" aria-label="Collapse sidebar"><i data-icon="panel-left"></i></button><span class="sl-tooltip sl-tooltip--below" role="tooltip">Collapse sidebar</span></span>
+  </div>
+  <div class="sl-inputbox"><i data-icon="search" class="sl-icon--sm"></i><label class="sl-sr" for="as-sb-q">Search</label><input id="as-sb-q" type="search" placeholder="Search"><span class="sl-kbd">⌘K</span></div>
+  <ul class="sl-nav"><li><button type="button" class="sl-navitem" data-sl-nav><i data-icon="house" class="sl-icon--nav"></i><span class="sl-navitem__label">Home</span></button></li><li><button type="button" class="sl-navitem" data-sl-nav><i data-icon="inbox" class="sl-icon--nav"></i><span class="sl-navitem__label">Inbox</span><span class="sl-countbadge" aria-label="4 unread">4</span></button></li><li><button type="button" class="sl-navitem" data-sl-nav><i data-icon="square-check-big" class="sl-icon--nav"></i><span class="sl-navitem__label">My tasks</span><span class="sl-count">3</span></button></li></ul>
+  <div class="sl-navlabel"><span>WORKSPACE</span></div>
+  <ul class="sl-nav"><li><button type="button" class="sl-navitem" data-sl-nav><i data-icon="layers" class="sl-icon--nav"></i><span class="sl-navitem__label">All items</span><span class="sl-count">154</span></button></li><li><button type="button" class="sl-navitem" data-sl-nav><i data-icon="users" class="sl-icon--nav"></i><span class="sl-navitem__label">Shared with me</span><span class="sl-count">22</span></button></li><li><button type="button" class="sl-navitem" data-sl-nav><i data-icon="clock" class="sl-icon--nav"></i><span class="sl-navitem__label">Recent</span></button></li><li><button type="button" class="sl-navitem" data-sl-nav><i data-icon="star" class="sl-icon--nav"></i><span class="sl-navitem__label">Starred</span><span class="sl-count">5</span></button></li><li><button type="button" class="sl-navitem" data-sl-nav aria-current="page"><i data-icon="archive" class="sl-icon--nav"></i><span class="sl-navitem__label">Archive</span><span class="sl-count">312</span></button></li><li><button type="button" class="sl-navitem" data-sl-nav><i data-icon="trash-2" class="sl-icon--nav"></i><span class="sl-navitem__label">Trash</span></button></li></ul>
+  <div class="sl-navlabel"><span>GROUPS</span><button type="button" class="sl-iconbtn" aria-label="New group"><i data-icon="plus" class="sl-icon--sm"></i></button></div>
+  <ul class="sl-nav"><li><button type="button" class="sl-navitem" aria-expanded="false" data-sl-toggle="as-sb-ops"><span class="sl-sq sl-tint--blue">O</span><span class="sl-navitem__label">Operations</span><span class="sl-count">58</span><i data-icon="chevron-right" class="sl-icon--sm sl-navitem__chev"></i></button>
+      <ul class="sl-subnav" id="as-sb-ops" hidden><li><button type="button" class="sl-navitem" data-sl-nav><span class="sl-navitem__label">All items</span><span class="sl-count">58</span></button></li><li><button type="button" class="sl-navitem" data-sl-nav><span class="sl-navitem__label">Runbooks</span><span class="sl-count">12</span></button></li><li><button type="button" class="sl-navitem" data-sl-nav><span class="sl-navitem__label">Schedules</span><span class="sl-count">9</span></button></li></ul></li><li><button type="button" class="sl-navitem" aria-expanded="false" data-sl-toggle="as-sb-res"><span class="sl-sq sl-tint--orange">R</span><span class="sl-navitem__label">Research</span><span class="sl-count">31</span><i data-icon="chevron-right" class="sl-icon--sm sl-navitem__chev"></i></button>
+      <ul class="sl-subnav" id="as-sb-res" hidden><li><button type="button" class="sl-navitem" data-sl-nav><span class="sl-navitem__label">Notes</span><span class="sl-count">17</span></button></li><li><button type="button" class="sl-navitem" data-sl-nav><span class="sl-navitem__label">Datasets</span><span class="sl-count">14</span></button></li></ul></li><li><button type="button" class="sl-navitem" aria-expanded="false" data-sl-toggle="as-sb-par"><span class="sl-sq sl-tint--green">P</span><span class="sl-navitem__label">Partners</span><span class="sl-count">46</span><i data-icon="chevron-right" class="sl-icon--sm sl-navitem__chev"></i></button>
+      <ul class="sl-subnav" id="as-sb-par" hidden><li><button type="button" class="sl-navitem" data-sl-nav><span class="sl-navitem__label">Shared resources</span><span class="sl-count">46</span></button></li><li><button type="button" class="sl-navitem" data-sl-nav><span class="sl-navitem__label">Agreements</span><span class="sl-count">11</span></button></li></ul></li><li><button type="button" class="sl-navitem" aria-expanded="true" data-sl-toggle="as-sb-fac"><span class="sl-sq sl-tint--violet">F</span><span class="sl-navitem__label">Facilities</span><span class="sl-count">19</span><i data-icon="chevron-right" class="sl-icon--sm sl-navitem__chev"></i></button>
+      <ul class="sl-subnav" id="as-sb-fac"><li><button type="button" class="sl-navitem" data-sl-nav><span class="sl-navitem__label">Sites</span><span class="sl-count">7</span></button></li><li><button type="button" class="sl-navitem" data-sl-nav><span class="sl-navitem__label">Requests</span><span class="sl-count">12</span></button></li></ul></li></ul>
+  <div class="sl-spacer" style="min-height: 16px"></div>
+  <div class="sl-usage"><div class="sl-usage__row"><b>Storage</b><span>68.4 / 100 GB</span></div>
+    <div class="sl-meter" role="meter" aria-label="Storage" aria-valuemin="0" aria-valuemax="100" aria-valuenow="68.4" aria-valuetext="68.4 of 100 GB"><span class="sl-fill--blue" style="width:41%"></span><span class="sl-fill--violet" style="width:18%"></span><span class="sl-fill--green" style="width:9%"></span></div></div>
+  <ul class="sl-nav"><li><button type="button" class="sl-navitem" data-sl-nav><i data-icon="settings" class="sl-icon--nav"></i><span class="sl-navitem__label">Settings</span></button></li></ul>
+  <button type="button" class="sl-profile" aria-label="Account menu, Kwame Mensah, online"><span class="sl-avatar sl-avatar--md sl-avatar--o">KM<span class="sl-presence sl-presence--on"></span></span><span class="sl-stack2"><span>Kwame Mensah</span><span>Coordinator</span></span><i data-icon="ellipsis" class="sl-icon--muted"></i></button>
+</nav>
+<div class="sl-main">
+<header class="sl-topbar">
+  <nav class="sl-crumbs" aria-label="Breadcrumb" style="flex:1"><ol data-sl-crumbs><li><span aria-current="page" title="Archive">Archive</span></li></ol></nav>
+  <div class="sl-seg" role="radiogroup" aria-label="Theme" data-sl-theme-switch>
+    <button type="button" class="sl-seg__item" role="radio" data-value="light" aria-checked="false" aria-label="Light theme" title="Light"><i data-icon="sun" class="sl-icon--sm"></i></button>
+    <button type="button" class="sl-seg__item" role="radio" data-value="night" aria-checked="false" aria-label="Night light theme" title="Night light"><i data-icon="sunset" class="sl-icon--sm"></i></button>
+    <button type="button" class="sl-seg__item" role="radio" data-value="dark" aria-checked="false" aria-label="Dark theme" title="Dark"><i data-icon="moon" class="sl-icon--sm"></i></button>
+  </div>
+  <span class="sl-tip"><button type="button" class="sl-iconbtn" aria-label="Notifications, 2 new"><i data-icon="bell" class="sl-icon--lg"></i><span class="sl-iconbtn__dot"></span></button><span class="sl-tooltip sl-tooltip--below" role="tooltip">Notifications</span></span>
+</header>
+<div class="sl-content"><div class="sl-screen">
+  <div class="sl-pagehead"><h1 class="sl-pagetitle">Archive</h1><span class="sl-count" style="font-size: var(--fs-sm)">312 items</span><span class="sl-spacer"></span><button type="button" class="sl-btn"><i data-icon="download"></i>Export</button></div>
+  <div class="sl-box"><div class="sl-empty"><span class="sl-empty__icon"><i data-icon="archive"></i></span><span class="sl-empty__title">Nothing archived this month</span><span class="sl-empty__text">Archived items from earlier months are under Filter → Archived on.</span></div></div>
+</div></div>
+</div>
+</div>
+</div>
+<script>Solaris.preview({"mode": "single", "flush": true, "title": "App shell"});</script>
+</body>
+</html>

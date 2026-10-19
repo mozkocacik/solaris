@@ -1,0 +1,22 @@
+<!-- @dsCard group="Foundations" height=420 subtitle="Borders first; four shadow levels" page -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Elevation</title></head>
+<body>
+<div id="root">
+<style>
+.fd-e { display: flex; flex-direction: column; gap: 8px; }
+.fd-e__box { height: 84px; border-radius: var(--r-lg); background: var(--surface); display:flex; align-items:center; justify-content:center; font-size: var(--fs-sm); color: var(--text-3); }
+</style>
+<div class="sl-demo__grid" style="grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 18px">
+  <div class="fd-e"><span class="fd-e__box" style="border: 1px solid var(--border)">border</span><span class="sl-mono" style="font-size: var(--fs-sm)">1px border</span><span class="sl-count">Default for static separation.</span></div>
+  <div class="fd-e"><span class="fd-e__box" style="box-shadow: var(--sh-1)">sh-1</span><span class="sl-mono" style="font-size: var(--fs-sm)">sh-1</span><span class="sl-count">Floating card buttons, checkbox holders.</span></div>
+  <div class="fd-e"><span class="fd-e__box" style="border: 1px solid var(--border-strong); box-shadow: var(--sh-2); transform: translateY(-2px)">sh-2</span><span class="sl-mono" style="font-size: var(--fs-sm)">sh-2</span><span class="sl-count">Card hover, with a 2px lift.</span></div>
+  <div class="fd-e"><span class="fd-e__box" style="border: 1px solid var(--text-4); box-shadow: var(--ring-open)">ring-open</span><span class="sl-mono" style="font-size: var(--fs-sm)">ring-open</span><span class="sl-count">The open card.</span></div>
+  <div class="fd-e"><span class="fd-e__box" style="box-shadow: var(--sh-3)">sh-3</span><span class="sl-mono" style="font-size: var(--fs-sm)">sh-3</span><span class="sl-count">Toast, menus, popovers, bulk bar.</span></div>
+  <div class="fd-e"><span class="fd-e__box" style="box-shadow: var(--sh-4); border-radius: var(--r-xl)">sh-4</span><span class="sl-mono" style="font-size: var(--fs-sm)">sh-4</span><span class="sl-count">Dialogs, command palette.</span></div>
+</div>
+</div>
+<script>Solaris.preview({"title": "Elevation", "bg": true});</script>
+</body>
+</html>

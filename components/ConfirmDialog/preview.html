@@ -1,0 +1,19 @@
+<!-- @dsCard group="Overlays" height=300 subtitle="Destructive confirmation" -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>ConfirmDialog</title></head>
+<body>
+<div id="root">
+<div style="position: relative; min-height: 250px; border-radius: var(--r-lg); overflow: hidden">
+  <div class="sl-backdrop" data-sl-modal style="padding-top: 24px">
+    <div class="sl-dialog sl-dialog--sm" role="alertdialog" aria-modal="true" aria-labelledby="cd1t" aria-describedby="cd1d">
+      <div class="sl-dialog__head"><span class="sl-dialog__icon"><i data-icon="trash-2"></i></span><h2 class="sl-dialog__title" id="cd1t">Delete 2 items?</h2></div>
+      <div class="sl-dialog__body"><p id="cd1d">"Q3 intake form" and "Service map" move to Trash. Members lose access now.</p></div>
+      <div class="sl-dialog__foot"><span class="sl-spacer"></span><button type="button" class="sl-btn" autofocus>Cancel</button><button type="button" class="sl-btn sl-btn--danger">Delete</button></div>
+    </div>
+  </div>
+</div>
+</div>
+<script>Solaris.preview({"mode": "single", "title": "ConfirmDialog"});</script>
+</body>
+</html>

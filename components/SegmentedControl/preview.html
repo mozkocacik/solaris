@@ -1,0 +1,34 @@
+<!-- @dsCard group="Actions" height=210 subtitle="Exclusive toggles for views and themes" -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>SegmentedControl</title></head>
+<body>
+<div id="root">
+<div class="sl-demo">
+  <div class="sl-demo__row"><span class="sl-demo__cap">View</span>
+    <div class="sl-seg" role="radiogroup" aria-label="View">
+      <button type="button" class="sl-seg__item" role="radio" aria-checked="true" aria-label="Table view"><i data-icon="list" class="sl-icon--sm"></i></button>
+      <button type="button" class="sl-seg__item" role="radio" aria-checked="false" aria-label="Grid view" tabindex="-1"><i data-icon="layout-grid" class="sl-icon--sm"></i></button>
+      <button type="button" class="sl-seg__item" role="radio" aria-checked="false" aria-label="Board view" tabindex="-1"><i data-icon="kanban" class="sl-icon--sm"></i></button>
+    </div>
+  </div>
+  <div class="sl-demo__row"><span class="sl-demo__cap">Theme</span>
+    <div class="sl-seg" role="radiogroup" aria-label="Theme" data-sl-theme-switch>
+      <button type="button" class="sl-seg__item" role="radio" data-value="light" aria-checked="false" aria-label="Light theme" title="Light"><i data-icon="sun" class="sl-icon--sm"></i></button>
+      <button type="button" class="sl-seg__item" role="radio" data-value="night" aria-checked="false" aria-label="Night light theme" title="Night light"><i data-icon="sunset" class="sl-icon--sm"></i></button>
+      <button type="button" class="sl-seg__item" role="radio" data-value="dark" aria-checked="false" aria-label="Dark theme" title="Dark"><i data-icon="moon" class="sl-icon--sm"></i></button>
+    </div>
+  </div>
+  <div class="sl-demo__row"><span class="sl-demo__cap">With labels</span>
+    <div class="sl-seg" role="radiogroup" aria-label="Range">
+      <button type="button" class="sl-seg__item" role="radio" aria-checked="false" tabindex="-1">Day</button>
+      <button type="button" class="sl-seg__item" role="radio" aria-checked="true">Week</button>
+      <button type="button" class="sl-seg__item" role="radio" aria-checked="false" tabindex="-1">Month</button>
+      <button type="button" class="sl-seg__item" role="radio" aria-checked="false" tabindex="-1" disabled>Year</button>
+    </div>
+  </div>
+</div>
+</div>
+<script>Solaris.preview({"title": "SegmentedControl"});</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!-- @dsCard group="Patterns" height=300 subtitle="Floating bar for selected items" -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Bulk bar</title></head>
+<body>
+<div id="root">
+<div style="position: relative; min-height: 220px" data-sl-list>
+  <div class="sl-box">
+    <div class="sl-li"><input type="checkbox" class="sl-check" data-sl-select aria-label="Select Site checklist — North" checked><span class="sl-typebadge sl-typebadge--blue">PG</span><span class="sl-stack2"><span>Site checklist — North</span><span>Oct 16 · Hana Sato</span></span></div><div class="sl-li"><input type="checkbox" class="sl-check" data-sl-select aria-label="Select Keys and badges" checked><span class="sl-typebadge sl-typebadge--green">TB</span><span class="sl-stack2"><span>Keys and badges</span><span>Oct 15 · Dario Conti</span></span></div><div class="sl-li"><input type="checkbox" class="sl-check" data-sl-select aria-label="Select Visitor log" checked><span class="sl-typebadge sl-typebadge--green">TB</span><span class="sl-stack2"><span>Visitor log</span><span>Oct 15 · Ines Moreau</span></span></div><div class="sl-li"><input type="checkbox" class="sl-check" data-sl-select aria-label="Select Floor plan"><span class="sl-typebadge sl-typebadge--violet">DG</span><span class="sl-stack2"><span>Floor plan</span><span>Oct 11 · Hana Sato</span></span></div>
+  </div>
+  <div class="sl-bulkwrap" data-sl-bulk hidden><div class="sl-bulkbar" role="toolbar" aria-label="Selection actions">
+  <span class="sl-bulkbar__count" data-sl-bulk-count>3 selected</span>
+  <button type="button" class="sl-bulkbar__btn"><i data-icon="share" class="sl-icon--sm"></i>Share</button><button type="button" class="sl-bulkbar__btn"><i data-icon="folder-input" class="sl-icon--sm"></i>Move</button><button type="button" class="sl-bulkbar__btn"><i data-icon="download" class="sl-icon--sm"></i>Export</button><button type="button" class="sl-bulkbar__btn sl-bulkbar__btn--danger"><i data-icon="trash-2" class="sl-icon--sm"></i>Delete</button>
+  <button type="button" class="sl-bulkbar__x" aria-label="Clear selection" data-sl-clear><i data-icon="x" class="sl-icon--sm"></i></button></div></div>
+</div>
+</div>
+<script>Solaris.preview({"layout": "rows", "title": "Bulk bar"});</script>
+</body>
+</html>

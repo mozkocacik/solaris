@@ -1,0 +1,34 @@
+<!-- @dsCard group="Actions" height=250 subtitle="Card buttons that appear on hover and focus" -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>FloatingActions</title></head>
+<body>
+<div id="root">
+<div class="sl-cardgrid" style="max-width: 420px">
+  <div class="sl-card">
+    <button type="button" class="sl-card__main" aria-label="Show details for Vendor contacts">
+      <span class="sl-card__thumb"><span class="sl-mini sl-tint--green" style="background: var(--paper)"><span class="sl-mini__h"></span><span class="sl-mini__s"></span><span class="sl-mini__rows"><span class="sl-mini__head"></span><span class="sl-mini__row"><i></i><i></i><i class="on"></i></span><span class="sl-mini__row"><i></i><i></i><i></i></span><span class="sl-mini__row"><i></i><i class="on"></i><i></i></span></span></span></span>
+      <span class="sl-card__foot"><span class="sl-typebadge sl-typebadge--sm sl-typebadge--green">TB</span><span class="sl-card__text"><span class="sl-card__name">Vendor contacts</span><span class="sl-card__meta">Oct 14 · 96 rows</span></span></span>
+    </button>
+    <label class="sl-card__check" style="opacity:1"><input type="checkbox" class="sl-check" aria-label="Select Vendor contacts"></label>
+    <span class="sl-card__actions" style="opacity:1">
+      <button type="button" class="sl-floatbtn sl-star" aria-label="Star Vendor contacts" aria-pressed="false" data-sl-star><i data-icon="star" class="sl-icon--sm"></i></button>
+      <button type="button" class="sl-floatbtn" aria-label="Open Vendor contacts"><i data-icon="arrow-up-right" class="sl-icon--sm"></i></button>
+    </span>
+  </div>
+  <div class="sl-card">
+    <button type="button" class="sl-card__main" aria-label="Show details for Room bookings">
+      <span class="sl-card__thumb"><span class="sl-mini"><span class="sl-mini__h"></span><span class="sl-mini__s"></span><span class="sl-mini__l" style="width:100%"></span><span class="sl-mini__l" style="width:90%"></span><span class="sl-mini__block"></span><span class="sl-mini__l" style="width:70%"></span></span></span>
+      <span class="sl-card__foot"><span class="sl-typebadge sl-typebadge--sm sl-typebadge--blue">PG</span><span class="sl-card__text"><span class="sl-card__name">Room bookings</span><span class="sl-card__meta">Yesterday · 3 pages</span></span></span>
+    </button>
+    <label class="sl-card__check"><input type="checkbox" class="sl-check" aria-label="Select Room bookings"></label>
+    <span class="sl-card__actions">
+      <button type="button" class="sl-floatbtn sl-star" aria-label="Star Room bookings" aria-pressed="true" data-sl-star><i data-icon="star" class="sl-icon--sm"></i></button>
+      <button type="button" class="sl-floatbtn" aria-label="Open Room bookings"><i data-icon="arrow-up-right" class="sl-icon--sm"></i></button>
+    </span>
+  </div>
+</div>
+</div>
+<script>Solaris.preview({"title": "FloatingActions"});</script>
+</body>
+</html>

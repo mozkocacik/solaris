@@ -1,0 +1,26 @@
+<!-- @dsCard group="Foundations" height=420 subtitle="Soft content radii; the shell has none" page -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Radius</title></head>
+<body>
+<div id="root">
+<style>
+.fd-r { display: flex; flex-direction: column; gap: 6px; align-items: flex-start; }
+.fd-r__box { width: 96px; height: 64px; background: var(--sunken); border: 1px solid var(--border-strong); }
+</style>
+<div class="sl-col" style="gap: 20px">
+  <div class="sl-demo__grid">
+    <div class="fd-r"><span class="fd-r__box" style="border-radius: var(--r-xs)"></span><span class="sl-mono" style="font-size: var(--fs-sm)">r-xs · 4px</span><span class="sl-count">Keyboard hints, mini page shapes in previews.</span></div><div class="fd-r"><span class="fd-r__box" style="border-radius: var(--r-sm)"></span><span class="sl-mono" style="font-size: var(--fs-sm)">r-sm · 6px</span><span class="sl-count">Chips, tags, small badges, icon buttons, segmented items (band 5 to 6).</span></div><div class="fd-r"><span class="fd-r__box" style="border-radius: var(--r-md)"></span><span class="sl-mono" style="font-size: var(--fs-sm)">r-md · 7px</span><span class="sl-count">Buttons, inputs, nav items, segmented tracks (band 7 to 8).</span></div><div class="fd-r"><span class="fd-r__box" style="border-radius: var(--r-lg)"></span><span class="sl-mono" style="font-size: var(--fs-sm)">r-lg · 9px</span><span class="sl-count">Cards, tables, toast, bulk bar, menus (band 9 to 10).</span></div><div class="fd-r"><span class="fd-r__box" style="border-radius: var(--r-xl)"></span><span class="sl-mono" style="font-size: var(--fs-sm)">r-xl · 12px</span><span class="sl-count">Dialogs and command palette.</span></div><div class="fd-r"><span class="fd-r__box" style="border-radius: var(--r-pill)"></span><span class="sl-mono" style="font-size: var(--fs-sm)">r-pill · 999px</span><span class="sl-count">Status pills, live pills, count badges.</span></div><div class="fd-r"><span class="fd-r__box" style="border-radius: var(--r-full)"></span><span class="sl-mono" style="font-size: var(--fs-sm)">r-full · 50%</span><span class="sl-count">Avatars, presence and status dots.</span></div>
+  </div>
+  <section class="sl-col"><h3 class="sl-h sl-h--sub">Sharp shell, soft content</h3>
+    <div style="display:flex; height: 120px; border: 1px solid var(--border)">
+      <div style="width: 120px; background: var(--bg); border-right: 1px solid var(--border); padding: 8px; display:flex; flex-direction:column; gap: 4px"><span style="height: 22px; border-radius: var(--r-sm); background: var(--selected)"></span><span style="height: 22px"></span></div>
+      <div style="flex:1; display:flex; flex-direction:column"><div style="height: 30px; border-bottom: 1px solid var(--border)"></div><div style="flex:1; padding: 12px; display:flex; gap: 8px; align-items:flex-start"><span class="sl-btn sl-btn--primary sl-btn--sm">New</span><span class="sl-chip sl-chip--add">Type</span><span style="flex:1; height: 52px; border: 1px solid var(--border); border-radius: var(--r-lg)"></span></div></div>
+    </div>
+    <span class="sl-count">Shell regions: 0 radius, 1px lines. Inside: r-sm chips, r-md buttons, r-lg cards and tables.</span>
+  </section>
+</div>
+</div>
+<script>Solaris.preview({"title": "Radius"});</script>
+</body>
+</html>

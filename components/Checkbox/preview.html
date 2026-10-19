@@ -1,0 +1,23 @@
+<!-- @dsCard group="Inputs" height=220 subtitle="Checkbox with checked, mixed, error and disabled states" -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Checkbox</title></head>
+<body>
+<div id="root">
+<div class="sl-demo">
+  <div class="sl-demo__row">
+    <label class="sl-choice"><input type="checkbox" class="sl-check">Notify members</label>
+    <label class="sl-choice"><input type="checkbox" class="sl-check" checked>Allow comments</label>
+    <label class="sl-choice"><input type="checkbox" class="sl-check" data-mixed>Select all</label>
+  </div>
+  <div class="sl-demo__row">
+    <label class="sl-choice"><input type="checkbox" class="sl-check sl-force-focus">Focus</label>
+    <label class="sl-choice"><input type="checkbox" class="sl-check" aria-invalid="true">Accept terms</label>
+    <label class="sl-choice"><input type="checkbox" class="sl-check" disabled>Disabled</label>
+    <label class="sl-choice"><input type="checkbox" class="sl-check" disabled checked>Locked on</label>
+  </div>
+</div>
+</div>
+<script>Solaris.preview({"title": "Checkbox", "after": function(r){ r.querySelectorAll("[data-mixed]").forEach(function(x){ x.indeterminate = true; }); }});</script>
+</body>
+</html>
