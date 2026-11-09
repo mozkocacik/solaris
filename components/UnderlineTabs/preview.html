@@ -1,0 +1,20 @@
+<!-- @dsCard group="Navigation" height=220 subtitle="Panel tabs with counts" -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>UnderlineTabs</title></head>
+<body>
+<div id="root">
+<div class="sl-box" style="max-width: 340px">
+  <div class="sl-utabs" role="tablist" aria-label="Item panel">
+    <button type="button" class="sl-utab" role="tab" aria-selected="true" aria-controls="ut-p1" id="ut-t1"><i data-icon="message-circle" class="sl-icon--sm"></i>Comments<span class="sl-utab__n">3</span></button>
+    <button type="button" class="sl-utab" role="tab" aria-selected="false" aria-controls="ut-p2" id="ut-t2" tabindex="-1"><i data-icon="history" class="sl-icon--sm"></i>Versions<span class="sl-utab__n">5</span></button>
+    <button type="button" class="sl-utab" role="tab" aria-selected="false" aria-controls="ut-p3" id="ut-t3" tabindex="-1"><i data-icon="activity" class="sl-icon--sm"></i>Activity</button>
+  </div>
+  <div class="sl-tabpanel" role="tabpanel" id="ut-p1" aria-labelledby="ut-t1" style="padding: 12px; color: var(--text-3)">3 comments on this item.</div>
+  <div class="sl-tabpanel" role="tabpanel" id="ut-p2" aria-labelledby="ut-t2" style="padding: 12px; color: var(--text-3)" hidden>5 saved versions.</div>
+  <div class="sl-tabpanel" role="tabpanel" id="ut-p3" aria-labelledby="ut-t3" style="padding: 12px; color: var(--text-3)" hidden>Recent activity.</div>
+</div>
+</div>
+<script>Solaris.preview({"title": "UnderlineTabs"});</script>
+</body>
+</html>

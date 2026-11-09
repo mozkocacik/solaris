@@ -1,0 +1,28 @@
+<!-- @dsCard group="Overlays" height=360 subtitle="Background task progress, done and failed" -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Toast</title></head>
+<body>
+<div id="root">
+<div class="sl-col" style="gap: 12px">
+  <div class="sl-toast" role="status" style="animation:none">
+    <div class="sl-toast__head"><span class="sl-toast__title">Importing 3 files</span><button type="button" class="sl-iconbtn sl-iconbtn--xs" aria-label="Dismiss" data-sl-dismiss-el=".sl-toast"><i data-icon="x" class="sl-icon--sm"></i></button></div>
+    <div class="sl-toast__row"><span class="sl-trunc">contacts-north.csv</span><span>2 of 3</span></div>
+    <div class="sl-toast__track"><div class="sl-toast__bar sl-toast__bar--run" style="width: 60%"></div></div>
+  </div>
+  <div class="sl-toast" role="status" style="animation:none">
+    <div class="sl-toast__head"><i data-icon="circle-check" class="sl-status-ok"></i><span class="sl-toast__title">Export ready</span><button type="button" class="sl-btn sl-btn--sm">Download</button><button type="button" class="sl-iconbtn sl-iconbtn--xs" aria-label="Dismiss" data-sl-dismiss-el=".sl-toast"><i data-icon="x" class="sl-icon--sm"></i></button></div>
+    <div class="sl-toast__row"><span>budget-lines-fy27.xlsx</span><span>418 KB</span></div>
+  </div>
+  <div class="sl-toast" role="alert" style="animation:none">
+    <div class="sl-toast__head"><i data-icon="circle-alert" class="sl-status-err"></i><span class="sl-toast__title">Sync failed</span><button type="button" class="sl-btn sl-btn--sm"><i data-icon="refresh-cw" class="sl-icon--sm"></i>Retry</button><button type="button" class="sl-iconbtn sl-iconbtn--xs" aria-label="Dismiss" data-sl-dismiss-el=".sl-toast"><i data-icon="x" class="sl-icon--sm"></i></button></div>
+    <div class="sl-toast__row"><span>The server did not answer. 12 changes wait.</span></div>
+  </div>
+  <div class="sl-toast" role="status" style="animation:none">
+    <div class="sl-toast__head"><span class="sl-toast__title">2 items moved to Trash</span><button type="button" class="sl-btn sl-btn--sm sl-btn--ghost">Undo</button></div>
+  </div>
+</div>
+</div>
+<script>Solaris.preview({"title": "Toast"});</script>
+</body>
+</html>

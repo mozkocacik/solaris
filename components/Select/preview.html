@@ -1,0 +1,19 @@
+<!-- @dsCard group="Inputs" height=230 subtitle="Native select with Solaris styling" -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Select</title></head>
+<body>
+<div id="root">
+<div class="sl-demo" style="max-width: 280px">
+  <div class="sl-field"><label class="sl-label" for="se1">Group</label>
+    <span class="sl-select"><select id="se1"><option>Operations</option><option selected>Research</option><option>Partners</option><option>Facilities</option></select><i data-icon="chevrons-up-down" class="sl-icon--sm"></i></span></div>
+  <div class="sl-field"><label class="sl-label" for="se2">Default role</label>
+    <span class="sl-select"><select id="se2" aria-invalid="true" aria-describedby="se2e"><option value="">Choose a role</option><option>Viewer</option><option>Editor</option></select><i data-icon="chevrons-up-down" class="sl-icon--sm"></i></span>
+    <span class="sl-error" id="se2e"><i data-icon="circle-alert" class="sl-icon--sm"></i>Choose a role.</span></div>
+  <div class="sl-field"><label class="sl-label" for="se3">Region</label>
+    <span class="sl-select"><select id="se3" disabled><option>North</option></select><i data-icon="chevrons-up-down" class="sl-icon--sm"></i></span></div>
+</div>
+</div>
+<script>Solaris.preview({"title": "Select"});</script>
+</body>
+</html>

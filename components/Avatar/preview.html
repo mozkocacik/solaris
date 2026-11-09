@@ -1,0 +1,29 @@
+<!-- @dsCard group="Data display" height=300 subtitle="Avatar, avatar stack and presence dot" -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Avatar</title></head>
+<body>
+<div id="root">
+<div class="sl-demo">
+  <div class="sl-demo__row"><span class="sl-demo__cap">Sizes</span>
+    <span class="sl-avatar sl-avatar--xs sl-avatar--o" title="Rana Haddad">RH</span><span class="sl-avatar sl-avatar--sm sl-avatar--g" title="Jonas Weber">JW</span><span class="sl-avatar sl-avatar--md sl-avatar--b" title="Mei Tanaka">MT</span><span class="sl-avatar sl-avatar--lg sl-avatar--p" title="Tomás Rivera">TR</span>
+  </div>
+  <div class="sl-demo__row"><span class="sl-demo__cap">Fills</span>
+    <span class="sl-avatar sl-avatar--md sl-avatar--o" title="Priya Nair">PN</span><span class="sl-avatar sl-avatar--md sl-avatar--g" title="Amara Okafor">AO</span><span class="sl-avatar sl-avatar--md sl-avatar--b" title="Lena Novak">LN</span><span class="sl-avatar sl-avatar--md sl-avatar--p" title="Oskar Lind">OL</span>
+  </div>
+  <div class="sl-demo__row"><span class="sl-demo__cap">Presence</span>
+    <span class="sl-avatar sl-avatar--md sl-avatar--g" title="Amara Okafor, online">AO<span class="sl-presence sl-presence--on"></span></span>
+    <span class="sl-avatar sl-avatar--md sl-avatar--b" title="Lena Novak, away">LN<span class="sl-presence sl-presence--away"></span></span>
+    <span class="sl-avatar sl-avatar--md sl-avatar--o" title="Priya Nair, offline">PN<span class="sl-presence"></span></span>
+  </div>
+  <div class="sl-demo__row"><span class="sl-demo__cap">Stack</span>
+    <span class="sl-stack" role="group" aria-label="Shared with 6 people"><span class="sl-avatar sl-avatar--sm sl-avatar--o" title="Rana Haddad">RH</span><span class="sl-avatar sl-avatar--sm sl-avatar--g" title="Jonas Weber">JW</span><span class="sl-avatar sl-avatar--sm sl-avatar--b" title="Mei Tanaka">MT</span></span><span class="sl-stack__more">+3</span>
+  </div>
+  <div class="sl-demo__row"><span class="sl-demo__cap">Editing now</span>
+    <span class="sl-stack" role="group" aria-label="2 people editing"><span class="sl-avatar sl-avatar--md sl-avatar--p" title="Oskar Lind" style="box-shadow:0 0 0 2px var(--green)">OL</span><span class="sl-avatar sl-avatar--md sl-avatar--b" title="Mei Tanaka" style="box-shadow:0 0 0 2px var(--blue)">MT</span></span>
+  </div>
+</div>
+</div>
+<script>Solaris.preview({"title": "Avatar"});</script>
+</body>
+</html>

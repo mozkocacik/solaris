@@ -1,0 +1,20 @@
+<!-- @dsCard group="Patterns" height=720 subtitle="Filtering and sorting, loading, empty and error states for lists" -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>List states</title></head>
+<body>
+<div id="root">
+<div class="sl-col" style="gap: 18px">
+  <section class="sl-col"><span class="sl-pv-label" style="margin:0">Filtered and sorted</span><div class="sl-toolbar"><div class="sl-tabs" role="tablist" aria-label="Filter members"><button type="button" class="sl-tab" role="tab" aria-selected="true"><i data-icon="users" class="sl-icon--sm"></i>All<span class="sl-count">9</span></button><button type="button" class="sl-tab" role="tab" aria-selected="false" tabindex="-1"><i data-icon="clock" class="sl-icon--sm"></i>Pending<span class="sl-count">2</span></button></div><span class="sl-spacer"></span>
+    <span class="sl-chip sl-chip--applied"><span class="sl-chip__key">Role</span>Editor<button type="button" class="sl-chip__x" aria-label="Remove filter Role: Editor"><i data-icon="x" class="sl-icon--sm"></i></button></span>
+    <span class="sl-chip sl-chip--applied"><span class="sl-chip__key">Group</span>Research<button type="button" class="sl-chip__x" aria-label="Remove filter Group: Research"><i data-icon="x" class="sl-icon--sm"></i></button></span>
+    <button type="button" class="sl-chip sl-chip--add"><i data-icon="plus" class="sl-icon--sm"></i>Filter</button><button type="button" class="sl-btn sl-btn--ghost sl-btn--sm">Clear</button>
+    <span class="sl-vsep" aria-hidden="true"></span><button type="button" class="sl-chip"><i data-icon="arrow-up-down" class="sl-icon--sm"></i>Name <span class="sl-chip__dir" aria-label="A to Z">↑</span></button></div></section>
+  <section class="sl-col"><span class="sl-pv-label" style="margin:0">Loading</span><div class="sl-box" aria-busy="true" aria-label="Loading members"><div class="sl-li sl-li--plain"><span class="sl-skel sl-skel--circle" style="width:24px;height:24px"></span><span class="sl-stack2"><span class="sl-skel sl-skel--line" style="width:42%"></span><span class="sl-skel sl-skel--line" style="width:30%; height:6px"></span></span><span class="sl-skel" style="width:48px;height:16px;border-radius:var(--r-pill)"></span></div><div class="sl-li sl-li--plain"><span class="sl-skel sl-skel--circle" style="width:24px;height:24px"></span><span class="sl-stack2"><span class="sl-skel sl-skel--line" style="width:55%"></span><span class="sl-skel sl-skel--line" style="width:24%; height:6px"></span></span><span class="sl-skel" style="width:48px;height:16px;border-radius:var(--r-pill)"></span></div><div class="sl-li sl-li--plain"><span class="sl-skel sl-skel--circle" style="width:24px;height:24px"></span><span class="sl-stack2"><span class="sl-skel sl-skel--line" style="width:36%"></span><span class="sl-skel sl-skel--line" style="width:34%; height:6px"></span></span><span class="sl-skel" style="width:48px;height:16px;border-radius:var(--r-pill)"></span></div></div></section>
+  <section class="sl-col"><span class="sl-pv-label" style="margin:0">Empty after filter</span><div class="sl-box"><div class="sl-empty" style="padding: 24px 16px"><span class="sl-empty__icon"><i data-icon="list-filter"></i></span><span class="sl-empty__title">No members match these filters</span><span class="sl-empty__text">Remove a filter to see more people.</span><div class="sl-row"><button type="button" class="sl-btn sl-btn--sm">Clear filters</button></div></div></div></section>
+  <section class="sl-col"><span class="sl-pv-label" style="margin:0">Error</span><div class="sl-alert sl-alert--error" role="alert"><i data-icon="circle-alert"></i><div class="sl-alert__body"><span class="sl-alert__title">Members could not load</span><span>The request timed out after 30 seconds.</span></div><button type="button" class="sl-btn sl-btn--sm"><i data-icon="refresh-cw" class="sl-icon--sm"></i>Retry</button></div></section>
+</div>
+</div>
+<script>Solaris.preview({"mode": "single", "title": "List states"});</script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!-- @dsCard group="Data display" height=520 subtitle="Bordered list table with selection, open row and hover actions" -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Table</title></head>
+<body>
+<div id="root">
+<div style="position: relative; min-height: 380px" data-sl-list>
+<div class="sl-tablewrap">
+  <table class="sl-table" aria-label="Records">
+    <colgroup><col style="width:38px"><col style="width:34%"><col style="width:17%"><col style="width:14%"><col style="width:13%"><col style="width:13%"><col style="width:12%"><col style="width:72px"></colgroup>
+    <thead><tr>
+      <th class="sl-col-check"><input type="checkbox" class="sl-check" data-sl-select-all aria-label="Select all"></th>
+      <th aria-sort="none"><button type="button" class="sl-sorth">Name</button></th>
+      <th>Owner</th><th>Shared with</th><th>Status</th>
+      <th aria-sort="descending"><button type="button" class="sl-sorth">Modified <i data-icon="arrow-down" class="sl-icon--sm"></i></button></th>
+      <th class="sl-col-num">Size</th><th class="sl-col-actions"><span class="sl-sr">Actions</span></th>
+    </tr></thead>
+    <tbody>
+    <tr>
+      <td class="sl-col-check"><input type="checkbox" class="sl-check" data-sl-select aria-label="Select Templates"></td>
+      <td><span class="sl-namecell"><span class="sl-typebadge sl-typebadge--neutral">CL</span><button type="button" class="sl-namebtn" data-sl-peek="tb-panel" title="Templates">Templates</button></span></td>
+      <td><span class="sl-person"><span class="sl-avatar sl-avatar--sm sl-avatar--b" title="Lena Novak">LN</span><span class="sl-trunc">Lena Novak</span></span></td>
+      <td><span class="sl-stack"><span class="sl-avatar sl-avatar--sm sl-avatar--g" title="Jonas Weber">JW</span><span class="sl-avatar sl-avatar--sm sl-avatar--b" title="Mei Tanaka">MT</span></span><span class="sl-stack__more">+3</span></td>
+      <td><span class="sl-pill sl-pill--success"><span class="sl-pill__dot"></span>Approved</span></td>
+      <td>Today, 09:14</td>
+      <td class="sl-col-num">24 items</td>
+      <td class="sl-col-actions"><span class="sl-rowactions">
+        <button type="button" class="sl-iconbtn sl-iconbtn--sm sl-iconbtn--muted sl-star" data-sl-star aria-pressed="false" aria-label="Star Templates"><i data-icon="star"></i></button>
+        <button type="button" class="sl-iconbtn sl-iconbtn--sm sl-iconbtn--muted" aria-label="More actions for Templates"><i data-icon="ellipsis"></i></button></span></td>
+    </tr><tr class="is-open">
+      <td class="sl-col-check"><input type="checkbox" class="sl-check" data-sl-select aria-label="Select Vendor contacts"></td>
+      <td><span class="sl-namecell"><span class="sl-typebadge sl-typebadge--green">TB</span><button type="button" class="sl-namebtn" data-sl-peek="tb-panel" title="Vendor contacts">Vendor contacts</button><span class="sl-live" title="Jonas Weber is editing"><span class="sl-live__dot"></span>Jonas</span></span></td>
+      <td><span class="sl-person"><span class="sl-avatar sl-avatar--sm sl-avatar--o" title="Rana Haddad">RH</span><span class="sl-trunc">Rana Haddad</span></span></td>
+      <td><span class="sl-stack"><span class="sl-avatar sl-avatar--sm sl-avatar--g" title="Jonas Weber">JW</span><span class="sl-avatar sl-avatar--sm sl-avatar--b" title="Mei Tanaka">MT</span><span class="sl-avatar sl-avatar--sm sl-avatar--p" title="Tomás Rivera">TR</span></span></td>
+      <td><span class="sl-pill sl-pill--info"><span class="sl-pill__dot"></span>In review</span></td>
+      <td>Today, 08:40</td>
+      <td class="sl-col-num">1,204 rows</td>
+      <td class="sl-col-actions"><span class="sl-rowactions">
+        <button type="button" class="sl-iconbtn sl-iconbtn--sm sl-iconbtn--muted sl-star" data-sl-star aria-pressed="false" aria-label="Star Vendor contacts"><i data-icon="star"></i></button>
+        <button type="button" class="sl-iconbtn sl-iconbtn--sm sl-iconbtn--muted" aria-label="More actions for Vendor contacts"><i data-icon="ellipsis"></i></button></span></td>
+    </tr><tr>
+      <td class="sl-col-check"><input type="checkbox" class="sl-check" data-sl-select aria-label="Select Onboarding checklist"></td>
+      <td><span class="sl-namecell"><span class="sl-typebadge sl-typebadge--blue">PG</span><button type="button" class="sl-namebtn" data-sl-peek="tb-panel" title="Onboarding checklist">Onboarding checklist</button></span></td>
+      <td><span class="sl-person"><span class="sl-avatar sl-avatar--sm sl-avatar--b" title="Mei Tanaka">MT</span><span class="sl-trunc">Mei Tanaka</span></span></td>
+      <td><span class="sl-stack"><span class="sl-avatar sl-avatar--sm sl-avatar--o" title="Rana Haddad">RH</span></span></td>
+      <td><span class="sl-pill"><span class="sl-pill__dot"></span>Draft</span></td>
+      <td>Yesterday</td>
+      <td class="sl-col-num">14 pages</td>
+      <td class="sl-col-actions"><span class="sl-rowactions">
+        <button type="button" class="sl-iconbtn sl-iconbtn--sm sl-iconbtn--muted sl-star" data-sl-star aria-pressed="true" aria-label="Star Onboarding checklist"><i data-icon="star"></i></button>
+        <button type="button" class="sl-iconbtn sl-iconbtn--sm sl-iconbtn--muted" aria-label="More actions for Onboarding checklist"><i data-icon="ellipsis"></i></button></span></td>
+    </tr><tr class="is-checked">
+      <td class="sl-col-check"><input type="checkbox" class="sl-check" data-sl-select aria-label="Select Q3 intake form" checked></td>
+      <td><span class="sl-namecell"><span class="sl-typebadge sl-typebadge--amber">FM</span><button type="button" class="sl-namebtn" data-sl-peek="tb-panel" title="Q3 intake form">Q3 intake form</button></span></td>
+      <td><span class="sl-person"><span class="sl-avatar sl-avatar--sm sl-avatar--p" title="Tomás Rivera">TR</span><span class="sl-trunc">Tomás Rivera</span></span></td>
+      <td><span class="sl-stack"><span class="sl-avatar sl-avatar--sm sl-avatar--o" title="Rana Haddad">RH</span><span class="sl-avatar sl-avatar--sm sl-avatar--g" title="Amara Okafor">AO</span></span><span class="sl-stack__more">+1</span></td>
+      <td><span class="sl-pill sl-pill--success"><span class="sl-pill__dot"></span>Approved</span></td>
+      <td>Oct 14</td>
+      <td class="sl-col-num">312 replies</td>
+      <td class="sl-col-actions"><span class="sl-rowactions">
+        <button type="button" class="sl-iconbtn sl-iconbtn--sm sl-iconbtn--muted sl-star" data-sl-star aria-pressed="false" aria-label="Star Q3 intake form"><i data-icon="star"></i></button>
+        <button type="button" class="sl-iconbtn sl-iconbtn--sm sl-iconbtn--muted" aria-label="More actions for Q3 intake form"><i data-icon="ellipsis"></i></button></span></td>
+    </tr><tr class="is-checked">
+      <td class="sl-col-check"><input type="checkbox" class="sl-check" data-sl-select aria-label="Select Service map" checked></td>
+      <td><span class="sl-namecell"><span class="sl-typebadge sl-typebadge--violet">DG</span><button type="button" class="sl-namebtn" data-sl-peek="tb-panel" title="Service map">Service map</button></span></td>
+      <td><span class="sl-person"><span class="sl-avatar sl-avatar--sm sl-avatar--g" title="Amara Okafor">AO</span><span class="sl-trunc">Amara Okafor</span></span></td>
+      <td><span class="sl-stack"><span class="sl-avatar sl-avatar--sm sl-avatar--b" title="Lena Novak">LN</span></span></td>
+      <td><span class="sl-pill sl-pill--error"><span class="sl-pill__dot"></span>Blocked</span></td>
+      <td>Oct 12</td>
+      <td class="sl-col-num">38 nodes</td>
+      <td class="sl-col-actions"><span class="sl-rowactions">
+        <button type="button" class="sl-iconbtn sl-iconbtn--sm sl-iconbtn--muted sl-star" data-sl-star aria-pressed="false" aria-label="Star Service map"><i data-icon="star"></i></button>
+        <button type="button" class="sl-iconbtn sl-iconbtn--sm sl-iconbtn--muted" aria-label="More actions for Service map"><i data-icon="ellipsis"></i></button></span></td>
+    </tr><tr>
+      <td class="sl-col-check"><input type="checkbox" class="sl-check" data-sl-select aria-label="Select Monthly summary — September"></td>
+      <td><span class="sl-namecell"><span class="sl-typebadge sl-typebadge--red">RP</span><button type="button" class="sl-namebtn" data-sl-peek="tb-panel" title="Monthly summary — September">Monthly summary — September</button></span></td>
+      <td><span class="sl-person"><span class="sl-avatar sl-avatar--sm sl-avatar--o" title="Priya Nair">PN</span><span class="sl-trunc">Priya Nair</span></span></td>
+      <td><span class="sl-stack"><span class="sl-avatar sl-avatar--sm sl-avatar--p" title="Oskar Lind">OL</span><span class="sl-avatar sl-avatar--sm sl-avatar--o" title="Rana Haddad">RH</span><span class="sl-avatar sl-avatar--sm sl-avatar--g" title="Jonas Weber">JW</span></span><span class="sl-stack__more">+5</span></td>
+      <td><span class="sl-pill sl-pill--warning"><span class="sl-pill__dot"></span>On hold</span></td>
+      <td>Oct 9</td>
+      <td class="sl-col-num">6 pages</td>
+      <td class="sl-col-actions"><span class="sl-rowactions">
+        <button type="button" class="sl-iconbtn sl-iconbtn--sm sl-iconbtn--muted sl-star" data-sl-star aria-pressed="false" aria-label="Star Monthly summary — September"><i data-icon="star"></i></button>
+        <button type="button" class="sl-iconbtn sl-iconbtn--sm sl-iconbtn--muted" aria-label="More actions for Monthly summary — September"><i data-icon="ellipsis"></i></button></span></td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+<div class="sl-pagination" style="margin-top: 12px"><span>6 of 46 items</span><div class="sl-pagination__nav"><button type="button" class="sl-pagebtn" aria-label="Previous page" disabled><i data-icon="chevron-left" class="sl-icon--sm"></i></button><button type="button" class="sl-pagebtn" aria-label="Next page"><i data-icon="chevron-right" class="sl-icon--sm"></i></button></div></div>
+<div class="sl-bulkwrap" data-sl-bulk hidden><div class="sl-bulkbar" role="toolbar" aria-label="Selection actions">
+  <span class="sl-bulkbar__count" data-sl-bulk-count>2 selected</span>
+  <button type="button" class="sl-bulkbar__btn"><i data-icon="share" class="sl-icon--sm"></i>Share</button><button type="button" class="sl-bulkbar__btn"><i data-icon="folder-input" class="sl-icon--sm"></i>Move</button><button type="button" class="sl-bulkbar__btn"><i data-icon="download" class="sl-icon--sm"></i>Export</button><button type="button" class="sl-bulkbar__btn sl-bulkbar__btn--danger"><i data-icon="trash-2" class="sl-icon--sm"></i>Delete</button>
+  <button type="button" class="sl-bulkbar__x" aria-label="Clear selection" data-sl-clear><i data-icon="x" class="sl-icon--sm"></i></button></div></div>
+</div>
+</div>
+<script>Solaris.preview({"mode": "single", "layout": "rows", "title": "Table"});</script>
+</body>
+</html>

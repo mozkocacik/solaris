@@ -1,0 +1,27 @@
+<!-- @dsCard group="Actions" height=230 subtitle="Dashed add-filter chip and applied filter chips" -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>FilterChip</title></head>
+<body>
+<div id="root">
+<div class="sl-demo">
+  <div class="sl-demo__row"><span class="sl-demo__cap">Add</span>
+    <button type="button" class="sl-chip sl-chip--add"><i data-icon="plus" class="sl-icon--sm"></i>Type</button>
+    <button type="button" class="sl-chip sl-chip--add"><i data-icon="plus" class="sl-icon--sm"></i>Owner</button>
+    <button type="button" class="sl-chip sl-chip--add sl-force-hover"><i data-icon="plus" class="sl-icon--sm"></i>Status</button>
+  </div>
+  <div class="sl-demo__row"><span class="sl-demo__cap">Applied</span>
+    <span class="sl-chip sl-chip--applied"><span class="sl-chip__key">Type</span>Form<button type="button" class="sl-chip__x" aria-label="Remove filter Type: Form"><i data-icon="x" class="sl-icon--sm"></i></button></span>
+    <span class="sl-chip sl-chip--applied"><span class="sl-chip__key">Owner</span><span class="sl-avatar sl-avatar--xs sl-avatar--g">MT</span>Mei Tanaka<button type="button" class="sl-chip__x" aria-label="Remove filter Owner: Mei Tanaka"><i data-icon="x" class="sl-icon--sm"></i></button></span>
+    <span class="sl-chip sl-chip--applied"><span class="sl-chip__key">Status</span>2 selected<button type="button" class="sl-chip__x" aria-label="Remove filter Status"><i data-icon="x" class="sl-icon--sm"></i></button></span>
+  </div>
+  <div class="sl-demo__row"><span class="sl-demo__cap">In a toolbar</span>
+    <span class="sl-chip sl-chip--applied"><span class="sl-chip__key">Group</span>Partners<button type="button" class="sl-chip__x" aria-label="Remove filter Group: Partners"><i data-icon="x" class="sl-icon--sm"></i></button></span>
+    <button type="button" class="sl-chip sl-chip--add"><i data-icon="plus" class="sl-icon--sm"></i>Filter</button>
+    <button type="button" class="sl-btn sl-btn--ghost sl-btn--sm">Clear</button>
+  </div>
+</div>
+</div>
+<script>Solaris.preview({"title": "FilterChip"});</script>
+</body>
+</html>

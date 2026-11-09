@@ -1,0 +1,16 @@
+<!-- @dsCard group="Inputs" height=330 subtitle="Label, control and error message" -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>FormField</title></head>
+<body>
+<div id="root">
+<form class="sl-col" style="max-width: 320px; gap: 14px" novalidate onsubmit="return false">
+  <div class="sl-field"><label class="sl-label" for="ff1">Name</label><input id="ff1" class="sl-input" type="text" value="Access review"></div>
+  <div class="sl-field"><label class="sl-label" for="ff2">Email</label><input id="ff2" class="sl-input" type="email" value="amara.okafor@" aria-invalid="true" aria-describedby="ff2e"><span class="sl-error" id="ff2e"><i data-icon="circle-alert" class="sl-icon--sm"></i>Enter a full email address, like name@example.org.</span></div>
+  <div class="sl-field"><label class="sl-label" for="ff3">Notes<span class="sl-label__opt">Optional</span></label><textarea id="ff3" class="sl-textarea" rows="2"></textarea></div>
+  <div class="sl-row" style="justify-content: flex-end"><button type="button" class="sl-btn">Cancel</button><button type="submit" class="sl-btn sl-btn--primary">Save</button></div>
+</form>
+</div>
+<script>Solaris.preview({"title": "FormField"});</script>
+</body>
+</html>

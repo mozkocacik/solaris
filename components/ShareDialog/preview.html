@@ -1,0 +1,21 @@
+<!-- @dsCard group="Patterns" height=470 subtitle="Invite, people and roles, workspace access, copy link" -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Share dialog</title></head>
+<body>
+<div id="root">
+<div style="position: relative; min-height: 430px; margin: -16px"><div class="sl-backdrop" id="sd" data-sl-modal data-sl-dismiss>
+  <div class="sl-dialog" role="dialog" aria-modal="true" aria-labelledby="sd-t">
+    <div class="sl-dialog__head"><h2 class="sl-dialog__title" id="sd-t">Share “Kickoff notes”</h2><button type="button" class="sl-iconbtn sl-iconbtn--sm" aria-label="Close" data-sl-close><i data-icon="x"></i></button></div>
+    <div class="sl-dialog__body" style="gap: 8px">
+      <div class="sl-row" style="flex-wrap: nowrap; gap: 6px"><label class="sl-sr" for="sd-in">Add people or groups by name or email</label><input id="sd-in" class="sl-input sl-input--lg" type="text" placeholder="Add people or groups"><span class="sl-select" style="flex:none"><select aria-label="Role for new people" style="height: var(--size-lg); width: 96px"><option>Editor</option><option>Viewer</option></select><i data-icon="chevrons-up-down" class="sl-icon--sm"></i></span><button type="button" class="sl-btn sl-btn--primary sl-btn--lg">Invite</button></div>
+      <div class="sl-col" style="gap: 0; margin: 0 -6px"><div class="sl-li sl-li--plain" style="border:0; padding: 6px; border-radius: var(--r-md)"><span class="sl-avatar sl-avatar--lg sl-avatar--b" title="Mei Tanaka">MT</span><span class="sl-stack2"><span>Mei Tanaka</span><span>mei.tanaka@example.org</span></span><span class="sl-role">Owner</span></div><div class="sl-li sl-li--plain" style="border:0; padding: 6px; border-radius: var(--r-md)"><span class="sl-avatar sl-avatar--lg sl-avatar--o" title="Rana Haddad">RH</span><span class="sl-stack2"><span>Rana Haddad</span><span>rana.haddad@example.org</span></span><button type="button" class="sl-role" aria-label="Role for Rana Haddad: Editor">Editor<i data-icon="chevron-down" class="sl-icon--sm"></i></button></div><div class="sl-li sl-li--plain" style="border:0; padding: 6px; border-radius: var(--r-md)"><span class="sl-avatar sl-avatar--lg sl-avatar--o" title="Priya Nair">PN</span><span class="sl-stack2"><span>Priya Nair</span><span>priya.nair@example.org</span></span><button type="button" class="sl-role" aria-label="Role for Priya Nair: Editor">Editor<i data-icon="chevron-down" class="sl-icon--sm"></i></button></div><div class="sl-li sl-li--plain" style="border:0; padding: 6px; border-radius: var(--r-md)"><span class="sl-avatar sl-avatar--lg sl-avatar--p" title="Oskar Lind">OL</span><span class="sl-stack2"><span>Oskar Lind</span><span>oskar.lind@example.org</span></span><button type="button" class="sl-role" aria-label="Role for Oskar Lind: Viewer">Viewer<i data-icon="chevron-down" class="sl-icon--sm"></i></button></div></div>
+      <div class="sl-li sl-li--plain" style="padding: 10px 0 0; border-top: 1px solid var(--divider); border-bottom: 0"><span class="sl-sq sl-sq--lg sl-tint--neutral" style="width:32px;height:32px;border-radius:var(--r-md)"><i data-icon="building-2"></i></span><span class="sl-stack2"><span>Lakeside Team</span><span>Anyone in the workspace</span></span><button type="button" class="sl-role" aria-label="Workspace access: Viewer">Viewer<i data-icon="chevron-down" class="sl-icon--sm"></i></button></div>
+    </div>
+    <div class="sl-dialog__foot"><button type="button" class="sl-btn" data-sl-copy="https://example.org/s/8f3k2"><span><i data-icon="link" class="sl-icon--sm"></i></span><span data-sl-copy-label>Copy link</span></button><span class="sl-spacer"></span><button type="button" class="sl-btn sl-btn--primary" data-sl-close>Done</button></div>
+  </div>
+</div></div>
+</div>
+<script>Solaris.preview({"mode": "single", "title": "Share dialog"});</script>
+</body>
+</html>

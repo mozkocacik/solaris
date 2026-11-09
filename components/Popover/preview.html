@@ -1,0 +1,23 @@
+<!-- @dsCard group="Overlays" height=300 subtitle="Small panel anchored to a control" -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Popover</title></head>
+<body>
+<div id="root">
+<span class="sl-pop">
+  <button type="button" class="sl-btn" data-sl-menu="po1" aria-haspopup="dialog" aria-expanded="false"><i data-icon="list-filter"></i>Filter</button>
+  <div class="sl-popover" id="po1" role="dialog" aria-label="Filter" hidden>
+    <div class="sl-field"><label class="sl-label" for="po1s">Status</label><span class="sl-select"><select id="po1s"><option>Any</option><option>In review</option><option>Approved</option></select><i data-icon="chevrons-up-down" class="sl-icon--sm"></i></span></div>
+    <label class="sl-choice"><input type="checkbox" class="sl-check" checked>Only items I own</label>
+    <div class="sl-row" style="justify-content: flex-end"><button type="button" class="sl-btn sl-btn--sm sl-btn--ghost">Reset</button><button type="button" class="sl-btn sl-btn--sm sl-btn--primary">Apply</button></div>
+  </div>
+</span>
+<div class="sl-popover" role="dialog" aria-label="Member" style="margin-top: 12px; animation: none">
+  <div class="sl-row" style="flex-wrap: nowrap"><span class="sl-avatar sl-avatar--lg sl-avatar--g">DC</span><span class="sl-stack2"><span>Dario Conti</span><span>dario.conti@example.org</span></span></div>
+  <div class="sl-row"><span class="sl-role">Editor</span><span class="sl-pill sl-pill--success"><span class="sl-pill__dot"></span>Online</span></div>
+  <div class="sl-row"><button type="button" class="sl-btn sl-btn--sm"><i data-icon="mail" class="sl-icon--sm"></i>Message</button><button type="button" class="sl-btn sl-btn--sm sl-btn--ghost">View profile</button></div>
+</div>
+</div>
+<script>Solaris.preview({"title": "Popover"});</script>
+</body>
+</html>

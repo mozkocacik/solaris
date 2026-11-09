@@ -1,0 +1,26 @@
+<!-- @dsCard group="Inputs" height=330 subtitle="Searchable picker with listbox" -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Combobox</title></head>
+<body>
+<div id="root">
+<div class="sl-demo" style="max-width: 300px">
+  <div class="sl-field"><label class="sl-label" for="cb1">Owner</label>
+    <div class="sl-inputbox" style="position:relative">
+      <span class="sl-avatar sl-avatar--xs sl-avatar--b">KM</span>
+      <input id="cb1" type="text" role="combobox" aria-expanded="true" aria-controls="cb1-list" aria-autocomplete="list" value="K" aria-activedescendant="cb1-o1">
+      <i data-icon="chevrons-up-down" class="sl-icon--sm"></i>
+    </div>
+    <div class="sl-menu" style="position:static; margin-top: 2px">
+      <div class="sl-listbox" id="cb1-list" role="listbox" aria-label="People">
+        <div class="sl-option" role="option" id="cb1-o1" aria-selected="true" data-active="true"><span class="sl-avatar sl-avatar--sm sl-avatar--b">KM</span><span class="sl-stack2"><span>Kwame Mensah</span><span>kwame.mensah@example.org</span></span><i data-icon="check" class="sl-option__check sl-icon--sm"></i></div>
+        <div class="sl-option" role="option" id="cb1-o2" aria-selected="false"><span class="sl-avatar sl-avatar--sm sl-avatar--p">KH</span><span class="sl-stack2"><span>Kira Holm</span><span>kira.holm@example.org</span></span><i data-icon="check" class="sl-option__check sl-icon--sm"></i></div>
+        <div class="sl-option" role="option" id="cb1-o3" aria-selected="false"><span class="sl-avatar sl-avatar--sm sl-avatar--o">NK</span><span class="sl-stack2"><span>Nils Kowalski</span><span>nils.kowalski@example.org</span></span><i data-icon="check" class="sl-option__check sl-icon--sm"></i></div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<script>Solaris.preview({"title": "Combobox"});</script>
+</body>
+</html>

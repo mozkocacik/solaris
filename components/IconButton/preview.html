@@ -1,0 +1,30 @@
+<!-- @dsCard group="Actions" height=260 subtitle="Transparent square buttons with a tooltip" -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>IconButton</title></head>
+<body>
+<div id="root">
+<div class="sl-demo">
+  <div class="sl-demo__row"><span class="sl-demo__cap">Sizes</span>
+    <span class="sl-tip"><button type="button" class="sl-iconbtn" aria-label="Notifications, 2 new"><i data-icon="bell" class="sl-icon--lg"></i><span class="sl-iconbtn__dot"></span></button><span class="sl-tooltip" role="tooltip">Notifications</span></span>
+    <span class="sl-tip"><button type="button" class="sl-iconbtn" aria-label="Collapse sidebar"><i data-icon="panel-left" class="sl-icon--lg"></i></button><span class="sl-tooltip" role="tooltip">Collapse sidebar <span class="sl-kbd">[</span></span></span>
+    <button type="button" class="sl-iconbtn sl-iconbtn--sm" aria-label="More actions"><i data-icon="ellipsis"></i></button>
+    <button type="button" class="sl-iconbtn sl-iconbtn--xs" aria-label="Close"><i data-icon="x" class="sl-icon--sm"></i></button>
+  </div>
+  <div class="sl-demo__row"><span class="sl-demo__cap">Hover</span>
+    <button type="button" class="sl-iconbtn sl-force-hover" aria-label="Settings"><i data-icon="settings" class="sl-icon--lg"></i></button>
+    <span class="sl-tip"><button type="button" class="sl-iconbtn" aria-label="Copy link"><i data-icon="link" class="sl-icon--lg"></i></button><span class="sl-tooltip sl-tooltip--below is-shown" role="tooltip">Copy link</span></span>
+  </div>
+  <div class="sl-demo__row"><span class="sl-demo__cap">Pressed</span>
+    <button type="button" class="sl-iconbtn sl-star" aria-label="Star" aria-pressed="true"><i data-icon="star" class="sl-icon--lg"></i></button>
+    <button type="button" class="sl-iconbtn" aria-label="Filters" aria-expanded="true"><i data-icon="sliders-horizontal" class="sl-icon--lg"></i></button>
+  </div>
+  <div class="sl-demo__row"><span class="sl-demo__cap">Focus · Off</span>
+    <button type="button" class="sl-iconbtn sl-force-focus" aria-label="Download"><i data-icon="download" class="sl-icon--lg"></i></button>
+    <button type="button" class="sl-iconbtn" aria-label="Previous" disabled><i data-icon="chevron-left" class="sl-icon--lg"></i></button>
+  </div>
+</div>
+</div>
+<script>Solaris.preview({"title": "IconButton"});</script>
+</body>
+</html>

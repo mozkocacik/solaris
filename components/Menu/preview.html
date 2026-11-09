@@ -1,0 +1,38 @@
+<!-- @dsCard group="Overlays" height=360 subtitle="Dropdown and context menu" -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Menu</title></head>
+<body>
+<div id="root">
+<div class="sl-demo__row" style="align-items: flex-start; gap: 24px">
+  <div class="sl-col" style="gap: 6px">
+    <span class="sl-demo__cap">Dropdown</span>
+    <span class="sl-pop">
+      <button type="button" class="sl-btn" data-sl-menu="mn1" aria-haspopup="menu" aria-expanded="false"><i data-icon="plus"></i>New<i data-icon="chevron-down" class="sl-icon--sm"></i></button>
+      <div class="sl-menu" id="mn1" role="menu" aria-label="New" hidden>
+        <button type="button" class="sl-menu__item" role="menuitem"><i data-icon="file-text"></i>Page<span class="sl-kbd">P</span></button>
+        <button type="button" class="sl-menu__item" role="menuitem"><i data-icon="table"></i>Table<span class="sl-kbd">T</span></button>
+        <button type="button" class="sl-menu__item" role="menuitem"><i data-icon="clipboard-list"></i>Form</button>
+        <div class="sl-menu__sep" role="separator"></div>
+        <button type="button" class="sl-menu__item" role="menuitem"><i data-icon="folder-plus"></i>Collection</button>
+      </div>
+    </span>
+  </div>
+  <div class="sl-col" style="gap: 6px">
+    <span class="sl-demo__cap">Context menu (open)</span>
+    <div class="sl-menu" role="menu" aria-label="Actions for Room bookings" style="animation:none">
+      <div class="sl-menu__label">Room bookings</div>
+      <button type="button" class="sl-menu__item" role="menuitem"><i data-icon="arrow-up-right"></i>Open<span class="sl-kbd">↵</span></button>
+      <button type="button" class="sl-menu__item" role="menuitem"><i data-icon="share"></i>Share</button>
+      <button type="button" class="sl-menu__item" role="menuitem"><i data-icon="link"></i>Copy link</button>
+      <button type="button" class="sl-menu__item" role="menuitem"><i data-icon="folder-input"></i>Move to…</button>
+      <button type="button" class="sl-menu__item" role="menuitem" disabled><i data-icon="lock"></i>Lock</button>
+      <div class="sl-menu__sep" role="separator"></div>
+      <button type="button" class="sl-menu__item sl-menu__item--danger" role="menuitem"><i data-icon="trash-2"></i>Delete</button>
+    </div>
+  </div>
+</div>
+</div>
+<script>Solaris.preview({"title": "Menu"});</script>
+</body>
+</html>
